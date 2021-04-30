@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import React, { Component } from 'react';
+import Navigation from "./components/Navigation";
+import Profile from "./containers/pages/Profile";
+import Project from "./containers/pages/Project";
+import Skill from "./containers/pages/Skill";
+import Footer from "./containers/pages/Footer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render () {
+    return (
+        <div className="App">
+          <Navigation/>
+          <main className="main__container">
+            <Profile />
+            <Project />
+            <Skill />
+          </main>
+            <Footer />
+        </div>
+    );
+  }
 }
-
 export default App;

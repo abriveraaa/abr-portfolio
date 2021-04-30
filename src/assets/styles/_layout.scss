@@ -1,0 +1,31 @@
+.App {
+    .navigation {
+        height: 10vh;
+    }
+
+    .hero {
+        height: 90vh;
+    }
+}
+
+.main__container {
+
+    .container {
+        height: 100vh;
+        background-color: #f9f9f9;
+    
+        &__project {
+            background-color: #f9f9f9;
+        }
+    }
+    
+}
+
+.footer {
+
+}
+
+[class*="container__"]:hover .content .content__title::before {
+    transform: scaleX(1);
+    transform-origin: center;
+}

@@ -1,0 +1,78 @@
+.content {
+    width: 80%;
+    margin: auto;
+    position: relative;
+
+    &__title {
+        text-align: center;
+        padding: 2rem 0;
+
+        &::before {
+            content: "";
+            width: 15%;
+            display: block;
+            margin: 0 auto;
+            height: 5px;
+            border-radius: 10px;
+            background: #decf01;
+            // transform: rotateY(90deg);
+            transform: scaleX(0);
+            transition:transform 0.2s linear;
+            transform-origin: center;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 3rem;
+        justify-content: space-between;
+
+        &-right {
+            width: 40%;
+        }
+        
+        &-left {
+            width: 40%;
+        }
+    }
+
+    &__skill {
+        width: 80%;
+        margin: 5rem auto;
+                
+        &-progress {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__img {
+        height: 250px;
+        background-color: ivory;
+    }
+}
+
+.clip {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #0da795;
+    
+    &--top {
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%);
+    }
+    
+    &--bottom {
+        clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
+    }
+
+}

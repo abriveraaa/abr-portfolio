@@ -1,0 +1,30 @@
+.card {
+    border-radius: 5px;
+    background-color: #0da795;
+    width: 25%;
+    padding: 5rem 1rem 1.5rem 1rem;
+    color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    &-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &--logo {
+            width: 40%;
+            text-align: center;
+        }
+
+        &--title {
+            width: 60%;
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+    }
+}
+
+.active-card {
+    background-color: #decf01 !important;
+}

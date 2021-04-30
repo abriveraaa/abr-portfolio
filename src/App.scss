@@ -1,0 +1,24 @@
+@import "./assets/styles/layout";
+@import "./assets/styles/navbar";
+@import "./assets/styles/shape";
+@import "./assets/styles/typography";
+@import "./assets/styles/profile";
+@import "./assets/styles/button";
+@import "./assets/styles/project";
+@import "./assets/styles/card";
+@import "./assets/styles/tool";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*, :after {
+    box-sizing: border-box;
+}
+
+body {
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+}

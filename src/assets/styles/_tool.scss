@@ -1,0 +1,97 @@
+.icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+
+
+    &-social{
+        font-size: 1.7rem;
+        color: #069786;
+        margin-top: .5rem;
+    }
+
+    &-skill {
+        font-size: 3rem;
+        color: #ffffff;
+    }
+
+    &-arrow {
+        font-size: 1rem;
+        color: #decf01;
+        margin: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.skill {
+    display: block;
+    background-color: #069786;
+    width: 47%;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+
+    
+    &__data {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        &-name {
+            background-color: #07544B;
+            padding: .5rem;
+            width: 50%;
+        }
+        
+        &-percent {
+            padding: .5rem;
+
+        }
+    }
+
+    
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.p {
+
+    &__r {
+
+        &-1 {
+            padding-right: 1rem;
+        }
+    }
+
+    &__t {
+        &-1 {
+
+        }
+
+        &-2 {
+            padding-top: 2rem;
+        }
+    }
+}
+
+.m {
+    &__b {
+        &-1 {
+
+        }
+
+        &-2 {
+            margin-bottom: 2rem;
+
+            
+        }
+    }
+}
