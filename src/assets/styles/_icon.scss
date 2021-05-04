@@ -1,0 +1,110 @@
+.icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+
+
+    &-social{
+        font-size: 1.7rem;
+        color: #069786;
+
+        &--facebook:hover {
+            color: #1877f2;
+        }
+
+        &--twitter:hover {
+            color: #1da1f2;
+        }
+
+        &--youtube:hover {
+            color: #ff0000;
+        }
+
+        &--instagram:hover {
+            color: #c32aa3;
+        }
+
+        &--pinterest:hover {
+            color: #bd081c;
+        }
+
+        &--snapchat:hover {
+            color: #fffc00;
+        }
+
+        &--whatsapp:hover {
+            color: #25d366;
+        }
+
+        &--tumbler:hover {
+            color: #35465d;
+        }
+
+        &--reddit:hover {
+            color: #ff4500;
+        }
+
+        &--tiktok:hover {
+            color: #010101;
+        }
+
+        &--yelp:hover {
+            color: #d32323;
+        }
+
+        &--mastodon:hover {
+            color: #2b90d9;
+        }
+
+        &--spotify:hover {
+            color: #1ed760;
+        }
+
+        &--apple:hover {
+            color: #a6b1b7;
+        }
+
+        &--amazon:hover {
+            color: #ff9900;
+        }
+
+        &--alexa:hover {
+            color: #00a7ce;
+        }
+
+        &--skype:hover {
+            color: #00a7ce;
+        }
+
+        &--linkedin:hover {
+            color: #0a66c2;
+        }
+
+        &--github:hover {
+            color: #000;
+        }
+    }
+
+    &-skill {
+        font-size: 3rem;
+        color: #ffffff;
+    }
+
+    &-arrow {
+        font-size: 1rem;
+        color: #decf01;
+        margin: 0;
+    }
+
+    &-other {
+        display: inline-block;
+        font-size: 3rem;
+        color: #fff;
+        margin-right: 1rem;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

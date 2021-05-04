@@ -10,8 +10,6 @@ const SkillProgress = (props) => {
             <div className="skill__data">
                 <div className="skill__data-name" style={{ width: widthData}}>
                     <p className="text">{ name }</p>
-                </div>
-                <div className="skill__data-percent">
                     <p className="text">{ widthData }</p>
                 </div>
             </div>

@@ -1,7 +1,6 @@
 .content {
-    width: 80%;
+    width: 90%;
     margin: auto;
-    position: relative;
 
     &__title {
         text-align: center;
@@ -15,7 +14,6 @@
             height: 5px;
             border-radius: 10px;
             background: #decf01;
-            // transform: rotateY(90deg);
             transform: scaleX(0);
             transition:transform 0.2s linear;
             transform-origin: center;
@@ -53,6 +51,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        padding-bottom: 4rem;
     }
 
     &__img {
@@ -62,13 +61,13 @@
 }
 
 .clip {
-    position: absolute;
-    height: 100%;
-    width: 100%;
     background-color: #0da795;
     
     &--top {
-        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%);
+        height: 80%;
+        width: 95%;
+        margin-left: 5%;
+        border-radius: 80px 0 0 80px;
     }
     
     &--bottom {

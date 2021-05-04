@@ -1,18 +1,20 @@
 .hero {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    position: relative;
     width: 80%;
     margin: auto;
 
     &__owner {
+        position: absolute;
+        top: 17%;
+        left: 50vw;
         width: 35%;
-        padding: 6rem 1rem;
     }
 
     &__job {
+        position: absolute;
+        top: 35%;
+        left: 0;
         width: 40%;
-        padding-top: 13.5rem;
     }
 
     &__social {

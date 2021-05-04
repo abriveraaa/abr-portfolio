@@ -1,0 +1,23 @@
+.skill {
+    display: block;
+    background-color: #069786;
+    width: 47%;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+
+    
+    &__data {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        &-name {
+            display: flex;
+            justify-content: space-between;
+            background-color: #07544B;
+            padding: .5rem;
+        }
+    }  
+}

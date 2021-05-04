@@ -18,7 +18,7 @@ const SocialAccount = (props) => {
 
     return(
         <a target="_blank" rel="noopener noreferrer" href={ socialLink } className="link link__social">
-            <FontAwesomeIcon icon={['fab', socialSite]} className="icon icon-social" />
+            <FontAwesomeIcon icon={['fab', socialSite]} className={`icon icon-social icon-social--${ socialSite }`} />
         </a>
     );
 }

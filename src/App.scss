@@ -1,12 +1,15 @@
+@import "./assets/styles/button";
+@import "./assets/styles/card";
+@import "./assets/styles/contactform";
+@import "./assets/styles/content";
+@import "./assets/styles/icon";
 @import "./assets/styles/layout";
 @import "./assets/styles/navbar";
-@import "./assets/styles/shape";
-@import "./assets/styles/typography";
 @import "./assets/styles/profile";
-@import "./assets/styles/button";
-@import "./assets/styles/project";
-@import "./assets/styles/card";
+@import "./assets/styles/shape";
+@import "./assets/styles/skill";
 @import "./assets/styles/tool";
+@import "./assets/styles/typography";
 
 * {
     padding: 0;
@@ -21,4 +24,13 @@ body {
     color: #000000;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2rem;
+    background-color: #f9f9f9;
 }
+
+main, section, h1, li, img, nav, p, div, footer {
+    -moz-transition: width .5s ease-in-out, left 1s ease-in-out;
+    -webkit-transition: width .5s ease-in-out, left 1s ease-in-out;
+    -moz-transition: width .5s ease-in-out, left 1s ease-in-out;
+    -o-transition: width .5s ease-in-out, left 1s ease-in-out;
+    transition: all .5s ease-in-out, left 1s ease-in-out;
+  }

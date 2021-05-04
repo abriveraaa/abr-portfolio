@@ -2,6 +2,7 @@
     display: block;
     font-family: inherit;
 
+
     &__name {
         font-size: 4rem;
         font-weight: 700;
@@ -92,8 +93,17 @@
         padding: 1rem 0 3rem 0;
     }
 
+    &__contact-form {
+        font-weight: 600;
+        font-size: .9rem;
+    }
+
     &__center {
         text-align: center;
+    }
+
+    &__right {
+        text-align: right;
     }
 
     &__black {

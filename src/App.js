@@ -9,7 +9,7 @@ import Footer from "./containers/pages/Footer";
 class App extends Component {
   render () {
     return (
-        <div className="App">
+        <div className="main">
           <Navigation/>
           <main className="main__container">
             <Profile />

@@ -1,0 +1,103 @@
+.contact {
+    position: absolute;
+    top: -6rem;
+    right: 10%;
+    width: 30%;
+    margin: 3rem auto auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: .9rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #000;
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        text-align: center;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: #017366;
+    }
+
+    &__form {
+        width: 100%;
+        padding-top: 2rem;
+        
+        &-group {
+            display: flex;
+            flex-direction: column;
+            padding: 0 1rem 1.5rem 1rem;
+            width: 100%;
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+
+            button {
+                align-self: flex-end;
+            }
+        }    
+    }
+    
+    &__group {
+        padding: .5rem .5rem;
+        font-size: 1rem;
+        color: #017366;
+
+
+        &--label {
+            font-size: .9rem;
+            display: block;
+            font-weight: 600;
+            padding-bottom: .1rem;
+        }
+
+        &--input, &--textarea {
+            border: 0;
+            border-radius: 5px;
+            background-color: #ebf4f2;
+            outline: none;
+            box-shadow: 0 1px 2px 0 #cacaca inset;
+            width: 100%;
+        }
+        
+        &--textarea {
+            rows: 2;
+        }
+    }
+
+    &-details {
+        position: relative;
+        margin-top: 4rem;
+        height: 28rem;
+        background-image: linear-gradient(to top, #017366 0%, #0da795a6 100%), url("/assets/images/map.svg");
+        background-size: contain;
+        color: #fff;
+        
+        &__content {
+            width: 80%;
+            margin: 0 auto;
+        
+            &-data {
+                padding: 3rem 0;
+            }
+
+            &-other {
+                display: inline;
+
+                &--1 {
+                    display: inline-block;
+                    vertical-align: super;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    &-social {
+        padding: .3rem;
+        background-color: #07544B;
+    }
+
+}

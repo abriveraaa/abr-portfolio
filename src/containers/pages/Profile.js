@@ -12,14 +12,14 @@ class Profile extends Component {
                         <p className="text text__paragraph">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.
                         </p>
-                        <button className="button button__primary">Download CV</button>
+                        <button className="button button__primary cv">Download CV</button>
                     </div>
                     <div className="hero__owner">
                         <h1 className="text text__name">
                             Ariel <span className="text text__name-last">Rivera</span>
                         </h1>
                         <div className="hero__social">
-                            <p className="text">Find me on</p>
+                            <p className="text m__b-5">Find me on</p>
                             <div className="icon">
                                 <SocialAccount url="http://www.facebook.com/abriveraaa" application="facebook" />
                                 <SocialAccount url="http://www.linkedin.com/in/abrivera" application="linkedin" />
