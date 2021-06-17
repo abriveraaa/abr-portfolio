@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import Auxiliary from "../hoc/Auxiliary";
 import BackgroundClip from "../containers/style/BackgroundClip";
-import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from "react-scroll";
 
 class Navigation extends Component {
+
+    
     render() {
         return(
             <Auxiliary>
@@ -13,32 +16,63 @@ class Navigation extends Component {
                         <h2>AR</h2>
                         {/* <img src="" alt="Logo" /> */}
                     </div>
+                    <div className="nav-button">
+                        <input type="checkbox" id="check" />
+                        <label htmlFor="check" className="bar">
+                            <FontAwesomeIcon icon="bars" className="icon-bar" />
+                        </label>
+                    </div>
                     <ul className="nav-items">
                         <li className="nav-item">
-                            <NavLink to="/" exact activeClassName="active">
+                            <Link
+                                activeClass="active"
+                                to="#"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                offset={50}
+                            >
                                 Home
-                            </NavLink>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/projects" exact activeClassName="active">
+                            <Link
+                                activeClass="active"
+                                to="container__project"
+                                spy={true}
+                                smooth={true}
+                                duration={300}
+                            >
                                 Projects
-                            </NavLink>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/skills" exact activeClassName="active">
+                            <Link
+                                activeClass="active"
+                                to="container__skill"
+                                spy={true}
+                                smooth={true}
+                                duration={300}
+                            >
                                 Skills
-                            </NavLink>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/contact" exact activeClassName="active">
-                                Contact
-                            </NavLink>
+                            <Link
+                                activeClass="active"
+                                to="footer"
+                                spy={true}
+                                smooth={true}
+                                duration={300}
+                            >
+                                Contacts
+                            </Link>
                         </li>
                     </ul>
                 </nav>
             </Auxiliary>
-        );
+            );
+        }
     }
-}
-
-export default Navigation;
+    
+    export default Navigation;

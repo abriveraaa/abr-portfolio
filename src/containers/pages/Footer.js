@@ -11,25 +11,46 @@ const iconList = Object
 .map(icon => Icons[icon])
 
 library.add(...iconList)
-console.log(library)
 
 class Footer extends Component {
     render() {
         return(
-            <footer className="footer p__t-2">              
+            <footer className="footer">              
                 <div className="content">
                     <div className="content__title">
-                        <h3 className="text text__secondary">Contacts</h3>
+                        <h3 className="text text__secondary">Get In Touch</h3>
                     </div>
                 </div>
                 <div className="contact-details">
                     <div className="contact-details__content">
-                        <div className="contact-details__content-data">
-                            <div className="contact-details__content-address">
-                                <FontAwesomeIcon icon="map-marker-alt" className="icon icon-other" />
-                                <span className="contact-details__content-other--1">Santa Lucia, Pasig City</span>
+                        <address>
+                            <div className="contact-details__content-data">
+                                <div className="contact-details__content-footer">
+                                    <span className="contact-details__content-footer--icon">
+                                        <FontAwesomeIcon icon="map-marker-alt" className="icon icon-other" />
+                                    </span>
+                                    <span className="link link__address">
+                                        Santa Lucia, Pasig City
+                                    </span>
+                                </div>
+                                <div className="contact-details__content-footer">
+                                    <span className="contact-details__content-footer--icon">
+                                        <FontAwesomeIcon icon="envelope" className="icon icon-other" />
+                                    </span>
+                                    <a href="mailto:arielbunagrivera@gmail.com" className="link link__address--1">
+                                        arielbunagrivera@gmail.com
+                                    </a>
+                                </div>
+                                <div className="contact-details__content-footer">
+                                    <span className="contact-details__content-footer--icon">
+                                        <FontAwesomeIcon icon="phone" className="icon icon-other" />
+                                    </span>
+                                    <a href="tel:+639955487240" className="link link__address--1">
+                                        +639955487240
+                                    </a>
+                                </div>
                             </div>
-                        </div>
+                        </address>
                     </div>
                     <ContactForm />
                 </div>

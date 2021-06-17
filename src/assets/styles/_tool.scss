@@ -1,6 +1,69 @@
 .link {
     text-decoration: none;
     cursor: pointer;
+    
+    &__info {
+        font-size: .9rem;
+        font-weight: 600;
+        color: #decf01;
+        position: relative;
+        transition: all .3s ease-in-out;
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 135%;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #e4aa48;
+            transform: scaleX(0);
+            transition: transform .3s ease-in-out;
+            transform-origin: center;
+        }
+
+        &:hover::after {
+            transform: scaleX(1);
+            transform-origin: center;
+        }
+
+        &:hover svg {
+            margin-left: 1rem;
+        }
+        
+        &:hover .p__r-1 {
+            font-size: 1rem !important;
+
+        }
+    }
+
+    &__address {
+        align-self: center;
+        font-size: 1.5rem;
+        font-style: normal;
+        
+        &--1 {
+            font-style: normal;
+            color: #fff;
+            align-self: center;
+            font-size: 1.2rem;
+        }
+    }
+
+    &__category {
+        color: #fff;
+        padding: 1rem;
+
+        &:hover {
+            color: #decf01;
+        }
+
+        &.active {
+            color: #decf01 !important;
+        }
+
+    }
+
 }
 
 .copyright {
@@ -9,12 +72,41 @@
     align-self: center;
 }
 
+.pofo {
+
+    &-cat {
+        position: relative;
+        z-index: 1;
+
+        a.active {
+            color: #decf01 !important;
+            border-bottom: 2px solid #decf01 !important;
+            background-color: transparent !important;
+            border-top: 0 !important;
+            border-left: 0 !important;
+            border-right: 0 !important;
+        }
+    }
+
+    &-line {
+        background: #d6d6d6;
+        height: 2px;
+        position: absolute;
+        top: 35%;
+        width: 26.5%;
+        z-index: -1;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
 .p {
 
     &__r {
 
         &-1 {
             padding-right: 1rem;
+            transition: all .3s ease-in-out;
         }
     }
 
@@ -36,9 +128,11 @@
         }
 
         &-2 {
-            margin-bottom: 2rem;
+            margin-bottom: 2rem;  
+        }
 
-            
+        &-5 {
+            margin-bottom: .5rem;
         }
     }
 }

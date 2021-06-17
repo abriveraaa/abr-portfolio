@@ -23,15 +23,13 @@
     &__info {
         display: flex;
         flex-direction: row;
-        padding-bottom: 3rem;
-        justify-content: space-between;
+        padding-bottom: 5rem;
+        justify-content: center;
 
-        &-right {
-            width: 40%;
-        }
-        
-        &-left {
-            width: 40%;
+        &-link {
+            text-transform: uppercase;
+            font-size: .9rem;
+            font-weight: 600;
         }
     }
 
@@ -50,13 +48,12 @@
     &__card {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         padding-bottom: 4rem;
     }
 
     &__img {
         height: 250px;
-        background-color: ivory;
+        background-color: #000;
     }
 }
 

@@ -1,0 +1,932 @@
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    // HERO
+
+    .hero {
+
+        &__social {
+            font-size: 1rem;
+        }
+    }
+
+    // BACKGROUND CLIP
+
+    .background-clip {
+        display: none;
+
+        &--1 {
+            clip-path: polygon(0 0, 50% 0, 9% 14%, 0 50%);
+        }
+    
+        &--2 {
+            clip-path: polygon(0 0, 50% 0, 11% 15%, 0 50%);
+        }
+    
+        &--3 {
+            clip-path: polygon(50% 0, 0 0, 0 50%);
+        }
+    
+        &--4 {
+            clip-path: polygon(100% 100%, 100% 50%, 95% 85%, 50% 100%);
+        }
+    
+        &--5 {
+            clip-path: polygon(100% 100%, 100% 50%, 93% 84%, 50% 100%);
+        }
+    
+        &--6 {
+            clip-path: polygon(100% 50%, 50% 100%, 100% 100%);
+        }
+    }
+
+    // ICON
+
+    .icon {
+
+        &-social {
+            font-size: 1.6rem;
+        }
+    }
+
+    // TEXT
+
+    .text {
+
+        &__name {
+            font-size: 3rem;
+        }
+    }
+
+    // BUTTON
+
+    .button {
+        padding: .7rem 1.5rem;
+        font-size: .8rem;
+    }
+
+}
+
+@media only screen and (max-width : 991px) {
+
+    body {
+        background-color: #0da795 !important;
+    }
+
+    // HERO
+
+    .main {
+        .hero {
+            height: 60vh;
+            width: 90%;
+    
+            &__owner {
+                left: 0;
+                top: 25%;
+            }
+    
+            &__job {
+                top: 40%;
+                width: 40%;
+                right: 0;
+                left: unset;
+            }
+    
+            &__social {
+                padding: 6rem 0 2rem 0;
+            }
+        }
+    }
+
+    // NAVIGATION
+    .nav {
+        width: 90%;
+        
+        .nav-logo {
+            
+            font-size: 1.4rem;
+        }
+
+        .nav-button {
+            align-self: center;
+
+            .bar {
+                display: block;
+                vertical-align: middle;
+            }
+        }
+
+        .nav-items {
+            display: none;
+
+            .nav-item {
+                font-size: 1rem;
+                padding: 1rem .9rem;
+            }
+        }
+    }
+
+    // CONTENT
+
+    .content {
+
+        &__skill {
+            margin: 2rem auto 5rem auto;
+
+            &-progress {
+                flex-direction: column;
+            }
+        }
+
+        &__img {
+            height: 200px;
+        }
+    }
+
+    // SKILL
+
+    .skill {
+        width: 80%;
+        margin: 1rem auto;
+
+        &:last-child {
+            margin-bottom: 5rem;
+        }
+    }
+
+    // CONTAINER
+
+    .main__container {
+    
+        .container {
+            
+            &__project {
+                background-color: unset;
+            }
+
+            &__skill {
+                background-color: $color-grey;
+                border-radius: 0 0 80px 80px;
+            }
+        }
+        
+    }
+
+    // CLIP
+
+    .clip {
+        background-color: #f9f9f9;
+
+        &--top {
+            height: 100%;
+            width: 100%;
+            margin-left: 0;
+            border-radius: 80px 80px 0 0;
+        }
+    }
+
+    // BACKGROUND
+
+    .background-clip {
+        display: none;
+    }
+
+    // TEXT
+
+    .text {
+
+        &__primary {
+            font-size: 1.5rem;
+        }
+
+        &__tertiary {
+            font-size: .90rem;
+        }
+
+        &__name {
+            font-size: 3rem;
+
+            &-last {
+                color: #fff;
+            }
+        }
+
+        &__job {
+
+            &-title {
+                color: #fff;
+                font-size: 2rem;
+            }
+        }
+
+        &__paragraph {
+            padding: 1rem 0 2rem;
+            font-size: .9rem;
+        }
+
+        &__project {
+            
+            &-title {
+                font-size: 1.2rem;
+                color: #0da795; 
+            }
+
+            &-desc {
+                font-size: .85rem;
+            }
+        }
+    }
+
+    // ICON
+
+    .icon {
+
+        &-social {
+            color: #fff;
+        }
+
+        &-skill {
+            font-size: 2.5rem;
+        }
+    }
+
+    // BUTTON
+
+    .button {
+
+        &__primary {
+            background: #decf01 !important;
+        }
+    }
+
+    // CARD
+
+    .card {
+        width: 35%;
+        padding: 3rem 1rem 1.5rem 1rem;
+
+        &-info {
+
+            &--title {
+                font-size: .9rem;
+            }
+        }
+    }
+
+    // PADDING
+
+    .p {
+
+        &__t {
+            &-2 {
+                padding-top: 0;
+            }
+        }
+    }
+
+    // CONTACT
+
+    .contact {
+        width: unset;
+
+        &__title {
+            font-size: 1.2rem;
+        }
+
+        &-details{
+            
+            &__content {
+                
+                &-footer {
+                    width: 100%;
+
+                    &--icon {
+                        width: 5%;
+                    }
+                }
+            }
+        }
+    }
+
+    // LINK
+
+    .link {
+
+        &__address {
+            font-size: 1.2rem;
+
+            &--1 {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) and (max-width : 1023px) {
+
+    // NAVIGATION
+    .nav {
+        
+        .nav-logo {
+            
+            font-size: 1.4rem;
+        }
+
+        .nav-items {
+
+            .nav-item {
+                font-size: 1rem;
+                padding: 1rem .9rem;
+            }
+        }
+    }
+
+    // SKILL
+
+    .skill {
+        &__data {
+            
+            &-name {
+                font-size: .95rem;
+            }
+        }
+    }
+
+    // HERO
+
+    .hero {
+
+        &__owner {
+            left: 63%;
+        }
+
+        &__social {
+            font-size: 0.95rem;
+            padding: 7rem 0 2rem 0;
+        }
+    }
+
+    // TEXT
+
+    .text {
+
+        &__primary {
+            font-size: 1.5rem;
+        }
+
+        &__tertiary {
+            font-size: .90rem;
+        }
+
+        &__name {
+            font-size: 3rem;
+        }
+
+        &__paragraph {
+            font-size: .90rem;
+        }
+
+        &__job {
+
+            &-title {
+                font-size: 2.15rem;
+            }
+        }
+
+        &__project {
+
+            &-title {
+                font-size: 1.2rem;
+            }
+
+            &-desc {
+                font-size: .90rem;
+            }
+        }
+    }
+
+    // CONTENT
+    .contact {
+        
+        &-details {
+            
+            &__content {
+                
+                &-footer {
+                    width: 40%;
+
+                    &--icon {
+                        width: 8%;
+                    }
+                }
+            }
+        }
+    }
+
+    // LINK
+
+    .link {
+
+        &__address {
+            font-size: 1.3rem;
+
+            &--1 {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    // CONTENT
+
+    .content {
+
+        &__info {
+
+            &-right {
+                width: 45%;
+            }
+        }
+
+        &__img {
+            height: 200px;
+        }
+
+        &__skill {
+            margin: 3rem auto;
+        }
+    }
+
+    // CARD
+
+    .card {
+        padding: 4rem 1rem 1.5rem 1rem;
+
+        &-info {
+
+            &--title {
+                font-size: .98rem;
+            }
+        }
+    }
+
+    // PADDING
+
+    .p {
+
+        &__t {
+            &-2 {
+                padding-top: 0;
+            }
+        }
+    }
+
+    // ICON
+
+    .icon {
+
+        &-skill {
+            font-size: 2.5rem;
+        }
+    }
+
+    // BUTTON
+
+    .button {
+        padding: .6rem 1.5rem;
+        font-size: .80rem;
+    }
+}
+
+@media only screen and (min-width : 1024px) and (max-width: 1200px) {
+
+    // NAVIGATION
+    .nav {
+        
+        .nav-logo {
+            
+            font-size: 1.4rem;
+        }
+
+        .nav-items {
+
+            .nav-item {
+                font-size: 1rem;
+                padding: 1rem;
+            }
+        }
+    }
+
+    // HERO
+
+    .hero {
+
+        &__owner {
+            left: 63%;
+        }
+
+        &__social {
+            font-size: 1rem;
+            padding: 6.5rem 0 0;
+        }
+    }
+
+    // CONTENT
+
+    .content {
+
+        &__info {
+            padding-bottom: 2rem;
+
+            &-right {
+                width: 45%;
+            }
+        }
+
+        &__skill {
+            margin: 3rem auto;
+        }
+
+        &__card {
+            padding-bottom: 2rem;
+        }
+    }
+
+    // SKILL
+
+    .skill {
+
+        &__data {
+            font-size: .95rem;
+        }
+    }
+
+    // TEXT
+
+    .text {
+
+        &__primary {
+            font-size: 1.7rem;
+        }
+
+        &__tertiary {
+            font-size: .95rem;
+        }
+
+        &__name {
+            font-size: 3rem;
+        }
+
+        &__paragraph {
+            font-size: 0.85rem;
+        }
+
+        &__project-title {
+            font-size: 1.35rem;
+        }
+
+        &__project-desc {
+            font-size: .95rem;
+        }
+    }
+
+    // PADDING
+
+    .p {
+
+        &__t {
+            &-2 {
+                padding-top: 0;
+            }
+        }
+    }
+
+    // BUTTON
+
+    .button {
+        padding: 0.5rem 1rem;
+        font-size: .80rem;
+    }
+
+    // ICON
+
+    .icon {
+
+        &-skill {
+            font-size: 2.4rem;
+        }
+    }
+
+    // CARD
+
+    .card {
+        padding-top: 4rem;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1201px) and (max-width : 1300px) {
+
+    // NAVIGATION
+    .nav {
+       
+        .nav-logo {
+            
+            font-size: 1.4rem;
+        }
+    
+        .nav-items {
+    
+            .nav-item {
+                padding: 1rem;
+            }
+        }
+    }
+
+    // CONTENT
+
+    .content {
+
+        &__info {
+            padding-bottom: 2rem;
+
+            &-right {
+                width: 40%;
+            }
+        }
+
+        &__card {
+            padding-bottom: 2rem;
+        }
+
+        &__skill {
+            margin: 3rem auto;
+        }
+    }
+
+    // CONTACT
+
+    .contact {
+        
+        &-details {
+            
+            &__content {
+                
+                &-footer{
+
+                    &--icon {
+                        width: 8%;
+                    }
+                }
+            }
+        }
+    }
+
+
+    // TEXT
+
+    .text {
+
+        &__tertiary {
+            font-size: 1rem;
+        }
+
+        &__name {
+            font-size: 3.4rem;
+        }
+
+        &__project {
+
+            &-title {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    // LINK
+
+    .link {
+
+        &__address {
+            font-size: 1.4rem;
+
+            &--1 {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    // PADDING
+
+    .p {
+
+        &__t {
+
+            &-2 {
+                padding-top: 0;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 1301px) and (max-width : 1400px) {
+
+    // HERO
+
+    .hero {
+
+        &__owner {
+            left: 63%;
+        }
+
+        &__social {
+            
+        }
+    }
+
+    // PADDING
+
+    .p {
+
+        &__t {
+
+            &-2 {
+                padding-top: 0;
+            }
+        }
+    }
+
+    // TEXT
+
+    .text {
+
+        &__tertiary {
+            font-size: 1rem;
+        }
+    }
+
+    // CONTENT
+
+    .content {
+
+        &__skill {
+            margin: 4rem auto;
+        }
+    }
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1401px) {
+
+    // NAVIGATION
+    .nav {
+       
+        .nav-logo {
+            font-size: 2rem;            
+        }
+    
+        .nav-items {
+    
+            .nav-item {
+                font-size: 1.3rem;
+                padding: 1rem 1.5rem;
+            }
+        }
+    }
+
+    // PROFILE
+
+    .hero {
+
+        &__owner {
+            left: 63%;
+        }
+        &__social {
+            font-size: 1rem;
+            padding: 6.5rem 0 2rem 0;
+        }
+    }
+    
+
+    // PROJECT
+
+    .content {
+        
+        &__info {
+            padding-bottom: 2rem;
+            
+            &-right {
+                width: 40%;
+            }
+        }
+
+        &__skill {
+            margin: 3rem auto;
+        }
+    }
+
+    // CARD
+    
+    .card {
+    
+        &-info {
+            &--title {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    
+    // SKILL
+
+    .skill {
+        &__data {
+            &-name {
+            font-size: 1.2rem;
+            }
+        }
+    }
+
+    // CONTACT
+
+    .contact {
+        
+        &__group {
+            font-size: 1rem;
+            
+            &--label {
+            }
+        }
+    }
+
+
+    // TEXT
+
+    .text {
+
+        &__name {
+            font-size: 4rem;
+        }
+
+        &__job {
+
+            &-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        &__project {
+
+            &-title {
+                font-size: 1.5rem;
+            }
+
+            &-desc {
+                font-size: 1rem;
+            }
+        }
+
+        &__paragraph {
+            font-size: 1rem;
+            padding-bottom: 1.5rem;
+        }
+
+        &__tertiary {
+            font-size: 1.1rem;
+        }
+
+        &__secondary {
+            font-size: 1.2rem;
+        }
+
+    }
+
+    // BUTTON
+
+    .button {
+        font-size: .9rem;
+        letter-spacing: 1px;
+    }
+
+    // LINK
+
+    .link {
+
+        &__info {
+            font-size: 1rem;
+        }
+    }
+
+
+}

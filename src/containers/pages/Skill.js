@@ -17,7 +17,7 @@ class Skill extends Component {
 
                     <div className="content__skill">
                         <div className="content__skill-progress">
-                        <SkillProgress name="HTML" width="100%"/>
+                        <SkillProgress name="HTML" width="90%"/>
                         <SkillProgress name="CSS" width="90%"/>
                         <SkillProgress name="JAVASCRIPT" width="80%"/>
                         <SkillProgress name="NODEJS" width="75%"/>

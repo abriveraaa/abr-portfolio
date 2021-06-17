@@ -1,3 +1,14 @@
+
+$base-color-light: #1abc9c;
+$base-color-dark: #07544B;
+$color-black: #000;
+$color-white: #fff;
+$color-grey: #f9f9f9;
+$color-orange: #f39c12;
+$color-yellow: #f1c40f;
+$box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+
+
 @import "./assets/styles/button";
 @import "./assets/styles/card";
 @import "./assets/styles/contactform";
@@ -10,6 +21,7 @@
 @import "./assets/styles/skill";
 @import "./assets/styles/tool";
 @import "./assets/styles/typography";
+@import "./assets/styles/mediaqueries";
 
 * {
     padding: 0;
@@ -20,11 +32,25 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: $color-white;
+    background: $base-color-light;
+}
+  
+::selection {
+    color: $color-white;
+    background: $base-color-light;
+}
+
 body {
-    color: #000000;
+    color: $color-black;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2rem;
-    background-color: #f9f9f9;
+    background-color: $color-grey;
 }
 
 main, section, h1, li, img, nav, p, div, footer {
@@ -33,4 +59,4 @@ main, section, h1, li, img, nav, p, div, footer {
     -moz-transition: width .5s ease-in-out, left 1s ease-in-out;
     -o-transition: width .5s ease-in-out, left 1s ease-in-out;
     transition: all .5s ease-in-out, left 1s ease-in-out;
-  }
+}

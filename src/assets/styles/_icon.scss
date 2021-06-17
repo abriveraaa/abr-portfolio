@@ -95,6 +95,8 @@
         font-size: 1rem;
         color: #decf01;
         margin: 0;
+        transition: all .3s;
+        transform-origin: right;
     }
 
     &-other {
@@ -102,9 +104,13 @@
         font-size: 3rem;
         color: #fff;
         margin-right: 1rem;
+        width: 100% !important;
     }
 
-    &:last-child {
-        margin-right: 0;
+    &-bar {
+        font-size: 2rem;
+        cursor: pointer;
+        color: #fff;
+        vertical-align: middle;
     }
 }

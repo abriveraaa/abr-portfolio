@@ -7,9 +7,10 @@
     font-size: .9rem;
     cursor: pointer;
     word-spacing: 3px;
+    text-decoration: none;
 
     &__primary {
-        background: linear-gradient(to right, #017366 20%, #0da795 100%);
-        color: #ffffff;
+        background: linear-gradient(to right, $base-color-dark 20%, $base-color-light 100%);
+        color: $color-white;
     }
 }

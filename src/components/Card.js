@@ -1,31 +1,25 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaravel } from '@fortawesome/free-brands-svg-icons';
 
-class Card extends Component {
-    render() {
-        let className = 'card';
+const Card = (props) => {
+    let className = 'card';
+    const skillLanguage = props.language;
+    const title = props.title;
 
-        if (this.props.isActive) {
-            className += ' active-card';
-        }
-
-        let faIcon = '';
-        if (this.props.icon === 'Laravel') {
-            faIcon = faLaravel;
-        }
-
-        return(
-            <div className={className}>
-                <div className="card-info">
-                    <div className="card-info--logo">
-                        <FontAwesomeIcon icon={faIcon} className="icon-skill"/>
-                    </div>
-                    <div className="card-info--title">Tools and Equipment Monitoring System</div>
-                </div>
-            </div>
-        );
+    if (props.isActive) {
+        className += ' active-card';
     }
+
+    return(
+        <div className={className}>
+            <div className="card-info">
+                <div className="card-info--logo">
+                    <FontAwesomeIcon icon={['fab', skillLanguage ]} className="icon-skill"/>
+                </div>
+                <div className="card-info--title">{ title }</div>
+            </div>
+        </div>
+    );
 }
 
 export default Card;

@@ -4,12 +4,12 @@
     right: 10%;
     width: 30%;
     margin: 3rem auto auto;
-    background-color: #fff;
+    background-color: $color-white;
     border-radius: 5px;
     padding: 1rem;
     font-size: .9rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: #000;
+    box-shadow: $box-shadow;
+    color: $color-black;
 
     &__title {
         text-transform: uppercase;
@@ -17,7 +17,7 @@
         text-align: center;
         letter-spacing: 1px;
         font-weight: 600;
-        color: #017366;
+        color: $base-color-dark;
     }
 
     &__form {
@@ -43,7 +43,7 @@
     &__group {
         padding: .5rem .5rem;
         font-size: 1rem;
-        color: #017366;
+        color: $base-color-dark;
 
 
         &--label {
@@ -80,16 +80,22 @@
             margin: 0 auto;
         
             &-data {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 3rem;
                 padding: 3rem 0;
             }
 
-            &-other {
-                display: inline;
+            &-footer {
+                display: flex;
+                flex-direction: row;
+                width: 35%;
+                gap: 1rem;
 
-                &--1 {
-                    display: inline-block;
-                    vertical-align: super;
-                    font-size: 1.5rem;
+                &--icon {
+                    width: 10%;
+                    align-self: center;
                 }
             }
         }
