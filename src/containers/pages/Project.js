@@ -1,6 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import Card from '../../components/Card';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Project extends Component {
     render() {
