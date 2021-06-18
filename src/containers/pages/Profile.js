@@ -11,7 +11,7 @@ class Profile extends Component {
                     <div className="hero__job">
                         <h2 className="text text__job-title">Web Developer</h2>
                         <p className="text text__paragraph">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.
+                            I enjoy building web application.
                         </p>
                         <a href={ cv } target="_blank" className="button button__primary" rel="noreferrer" download>
                             Download CV
