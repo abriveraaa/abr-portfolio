@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SocialAccount from '../../components/SocialAccount';
 import Auxiliary from '../../hoc/Auxiliary';
-import cv from '../../assets/data/ABR_WebDeveloper.pdf';
+import cv from '../../assets/data/Rivera_Ariel_Resume.pdf';
 
 class Profile extends Component {
     render() {
