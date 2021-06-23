@@ -41,14 +41,14 @@ class Footer extends Component {
                                         arielbunagrivera@gmail.com
                                     </a>
                                 </div>
-                                <div className="contact-details__content-footer">
+                                {/* <div className="contact-details__content-footer">
                                     <span className="contact-details__content-footer--icon">
                                         <FontAwesomeIcon icon="phone" className="icon icon-other" />
                                     </span>
                                     <a href="tel:+639955487240" className="link link__address--1">
                                         +639955487240
                                     </a>
-                                </div>
+                                </div> */}
                             </div>
                         </address>
                     </div>

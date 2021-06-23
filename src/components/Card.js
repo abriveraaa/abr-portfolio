@@ -1,10 +1,23 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import styled from 'styled-components';
 
 const Card = (props) => {
     let className = 'card';
     const skillLanguage = props.language;
     const title = props.title;
+
+    const CoverPhoto = styled.div`
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
+        url(${props.cover});
+        background-size: cover;
+        height: 10rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    `;
 
     if (props.isActive) {
         className += ' active-card';
@@ -12,6 +25,7 @@ const Card = (props) => {
 
     return(
         <div className={className}>
+            <CoverPhoto></CoverPhoto>
             <div className="card-info">
                 <div className="card-info--logo">
                     <FontAwesomeIcon icon={['fab', skillLanguage ]} className="icon-skill"/>
