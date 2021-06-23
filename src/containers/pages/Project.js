@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import Card from '../../components/Card';
-import img from '../../assets/images/sample.jpg'
+import img from '../../assets/images/tems.png';
 
 class Project extends Component {
     render() {

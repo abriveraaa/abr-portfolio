@@ -8,7 +8,7 @@ const Card = (props) => {
     const title = props.title;
 
     const CoverPhoto = styled.div`
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
         url(${props.cover});
         background-size: cover;
         height: 10rem;
