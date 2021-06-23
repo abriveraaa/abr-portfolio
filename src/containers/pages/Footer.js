@@ -18,7 +18,7 @@ class Footer extends Component {
             <footer className="footer">              
                 <div className="content">
                     <div className="content__title">
-                        <h3 className="text text__secondary">Get In Touch</h3>
+                        <h3 className="text text__secondary">Contact</h3>
                     </div>
                 </div>
                 <div className="contact-details">

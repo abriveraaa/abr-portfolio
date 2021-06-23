@@ -26,6 +26,7 @@
     }
 
     &__job-title {
+        letter-spacing: 1px;
         font-size: 2.2rem;
         font-weight: 600;
         color: #069786;
@@ -36,6 +37,7 @@
         font-size: 1rem;
         font-weight: 500;
         color: #383838;
+        line-height: 1.5;
     }
 
     &__primary {

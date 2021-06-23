@@ -20,7 +20,7 @@ class Skill extends Component {
                         <SkillProgress name="HTML" width="90%"/>
                         <SkillProgress name="CSS" width="90%"/>
                         <SkillProgress name="JAVASCRIPT" width="80%"/>
-                        <SkillProgress name="NODEJS" width="75%"/>
+                        <SkillProgress name="REACTJS" width="55%"/>
                         <SkillProgress name="LARAVEL" width="90%"/>
                         <SkillProgress name="C#" width="45%"/>
                         <SkillProgress name="SQL SERVER" width="70%"/>

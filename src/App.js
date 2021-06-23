@@ -27,8 +27,8 @@ class App extends Component {
     return (
       <div className="main">
         <Navigation/>
+        <Profile />
         <main className="main__container">
-          <Profile />
           <Project />
           <Skill />
         </main>

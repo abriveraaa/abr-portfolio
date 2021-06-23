@@ -9,9 +9,9 @@ class Profile extends Component {
             <Auxiliary>
                 <header className="hero">
                     <div className="hero__job">
-                        <h2 className="text text__job-title">Web Developer</h2>
+                        <h2 className="text text__job-title">WEB DEVELOPER</h2>
                         <p className="text text__paragraph">
-                            I enjoy building web application.
+                            Background includes designing websites and landing pages. Fully proficient in HTML, PHP, Laravel Framework, CSS, SCSS, JavaScript and jQuery.
                         </p>
                         <a href={ cv } target="_blank" className="button button__primary" rel="noreferrer" download>
                             Download CV
