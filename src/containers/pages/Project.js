@@ -15,9 +15,6 @@ class Project extends Component {
                         </div>
                         <div className="content__card">
                             <Card cover={ img } isActive="true" language="laravel" title="Tools and Equipment Monitoring System"/>
-                            <Card cover={ img } isActive="true" language="laravel" title="Tools and Equipment Monitoring System"/>
-                            <Card cover={ img } isActive="true" language="laravel" title="Tools and Equipment Monitoring System"/>
-                            <Card cover={ img } isActive="true" language="laravel" title="Tools and Equipment Monitoring System"/>
                         </div>
                     </div>
                 </div>
