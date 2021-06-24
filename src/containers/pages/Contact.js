@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import ContactForm from '../../components/ContactForm';
+import React from 'react';
+// import ContactForm from '../../components/ContactForm';
 import SocialAccount from '../../components/SocialAccount';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
