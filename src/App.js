@@ -4,7 +4,7 @@ import Navigation from "./components/Navigation";
 import Profile from "./containers/pages/Profile";
 import Project from "./containers/pages/Project";
 import Skill from "./containers/pages/Skill";
-import Footer from "./containers/pages/Footer";
+import Contact from "./containers/pages/Contact";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import * as Solid from '@fortawesome/free-solid-svg-icons';
 import * as Brand from '@fortawesome/free-brands-svg-icons';
@@ -32,7 +32,7 @@ class App extends Component {
           <Project />
           <Skill />
         </main>
-          <Footer />
+          <Contact />
       </div>
     );
   }
