@@ -1,5 +1,5 @@
 import "./App.scss";
-import React, { Component } from 'react';
+import React, { useEffect, useState } from 'react';
 import Navigation from "./components/Navigation";
 import Profile from "./containers/pages/Profile";
 import Project from "./containers/pages/Project";
@@ -22,19 +22,41 @@ const iconBrand = Object
 library.add(...iconSolid)
 library.add(...iconBrand)
 
-class App extends Component {
-  render () {
-    return (
-      <div className="main">
-        <Navigation/>
-        <Profile />
-        <main className="main__container">
-          <Project />
-          <Skill />
-        </main>
-          <Contact />
-      </div>
-    );
+
+const App = () => {
+  const [data, setData] = useState([]);
+
+  const getData = () => {
+    fetch('data.json'
+    ,{
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+    })
+      .then(function(result){
+        return result.json();
+      })
+      .then(function(data) {
+        setData(data);
+      });
   }
+
+  useEffect(()=>{
+    getData()
+  },[])
+
+  return(
+    <div className="main">
+      <Navigation/>
+      <Profile data={ data } />
+      <main className="main__container">
+        <Project data={ data.projects }/>
+        <Skill data={ data.skills }/>
+      </main>
+        <Contact data={ data }/>
+    </div>
+  );
 }
+
 export default App;

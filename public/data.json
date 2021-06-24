@@ -1,0 +1,88 @@
+{
+    "firstname": "Ariel",
+    "lastname": "Rivera",
+    "address": "Santa Lucia, Pasig",
+    "email": "arielbunagrivera@gmail.com",
+    "position": "Web Developer",
+    "introduction": "Background includes designing websites and landing pages. Fully proficient in HTML, PHP, Laravel Framework, CSS, SCSS, JavaScript and jQuery.",
+    "resume": "pdf/Ariel_Rivera_Resume.pdf",
+    "socials": [
+        {
+            "id": 1,
+            "application": "facebook",
+            "link": "http://www.facebook.com/abriveraaa"
+        },
+        {
+            "id": 2,
+            "application": "linkedin",
+            "link": "http://www.linkedin.com/in/abrivera"
+        },
+        {
+            "id": 3,
+            "application": "github",
+            "link": "http://www.github.com/abriveraaa"
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "image": "images/tems.png",
+            "title": "Tools and Equipment Monitoring System",
+            "language": "laravel"
+        }
+    ],
+    "skills": [
+        {
+            "id": 1,
+            "name": "HTML",
+            "level": "90%"
+        },
+        {
+            "id": 2,
+            "name": "CSS",
+            "level": "90%"
+        },
+        {
+            "id": 3,
+            "name": "JavaScript",
+            "level": "70%"
+        },
+        {
+            "id": 4,
+            "name": "ReactJS",
+            "level": "55%"
+        },
+        {
+            "id": 5,
+            "name": "Laravel",
+            "level": "90%"
+        },
+        {
+            "id": 6,
+            "name": "SQL Server",
+            "level": "65%"
+        },
+        {
+            "id": 7,
+            "name": ".NET",
+            "level": "45%"
+        },
+        {
+            "id": 8,
+            "name": "C#",
+            "level": "45%"
+        }
+    ],
+    "contacts": [
+        {
+            "id": 1,
+            "icon": "map-marker-alt",
+            "contact": "Santa Lucia, Pasig"
+        },
+        {
+            "id": 2,
+            "icon": "envelope",
+            "contact": "arielbunagrivera@gmail.com"
+        }
+    ]
+}

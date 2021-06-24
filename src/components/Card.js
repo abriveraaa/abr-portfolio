@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
 
 const Card = (props) => {
+
     let className = 'card';
-    const skillLanguage = props.language;
     const title = props.title;
 
     const CoverPhoto = styled.div`
@@ -28,9 +28,9 @@ const Card = (props) => {
             <CoverPhoto></CoverPhoto>
             <div className="card-info">
                 <div className="card-info--logo">
-                    <FontAwesomeIcon icon={['fab', skillLanguage ]} className="icon-skill"/>
+                    <FontAwesomeIcon icon={['fab', props.language ]} className="icon-skill" title={ props.language }/>
                 </div>
-                <div className="card-info--title">{ title }</div>
+                <div className="card-info--title" title={ `Project: ` + title }>{ title }</div>
             </div>
         </div>
     );

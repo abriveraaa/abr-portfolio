@@ -8,7 +8,7 @@ const SkillProgress = (props) => {
     return(
         <div className="skill m__b-2">
             <div className="skill__data">
-                <div className="skill__data-name" style={{ width: widthData}}>
+                <div className="skill__data-name" style={{ width: widthData }}>
                     <p className="text">{ name }</p>
                     <p className="text">{ widthData }</p>
                 </div>
