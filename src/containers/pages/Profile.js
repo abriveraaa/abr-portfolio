@@ -1,7 +1,7 @@
 import React from 'react';
 import SocialAccount from '../../components/SocialAccount';
 import Auxiliary from '../../hoc/Auxiliary';
-import cv from '../../assets/data/Ariel-Rivera-Resume.pdf';
+import cv from '../../assets/data/Ariel_Rivera_Resume.pdf';
 
 
 const Profile = (props) => {
