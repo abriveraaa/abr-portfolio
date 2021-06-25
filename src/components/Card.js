@@ -4,11 +4,10 @@ import styled from 'styled-components';
 
 const Card = (props) => {
 
-    let className = 'card';
     const title = props.title;
 
     const CoverPhoto = styled.div`
-        background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
         url(${props.cover});
         background-size: cover;
         height: 10rem;
@@ -19,18 +18,17 @@ const Card = (props) => {
         border-top-right-radius: 3px;
     `;
 
-    if (props.isActive) {
-        className += ' active-card';
-    }
-
     return(
-        <div className={className}>
+        <div className="card">
             <CoverPhoto></CoverPhoto>
-            <div className="card-info">
-                <div className="card-info--logo">
+            <div className="card__details">
+                <div className="card__details--logo">
                     <FontAwesomeIcon icon={['fab', props.language ]} className="icon-skill" title={ props.language }/>
                 </div>
-                <div className="card-info--title" title={ `Project: ` + title }>{ title }</div>
+                <a href={ props.link } target="_blank" rel="noreferrer" className="card__details--title">
+                    <div title={ `Project: ` + title }>{ title }</div>
+                    
+                </a>
             </div>
         </div>
     );

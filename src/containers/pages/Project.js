@@ -15,7 +15,13 @@ const Project = ({data}) => {
                     <div className="content__card">
                         {
                             projects ? projects.map(item => {
-                                return <Card key={ item.id } isActive="true" cover={ item.image } language={ item.language } title={ item.title }/>;
+                                return <Card 
+                                    key={ item.id } 
+                                    cover={ item.image } 
+                                    language={ item.language } 
+                                    title={ item.title }
+                                    link = { item.link }
+                                />;
                             })
                             : "Loading..."
                         }

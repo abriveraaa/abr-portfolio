@@ -1,6 +1,37 @@
 import React, { Component } from 'react';
+// import axios from 'axios';
 
 class ContactForm extends Component {
+      
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {
+    //         name: '',
+    //         email: '',
+    //         message: ''
+    //     }
+    // }
+
+    // handleSubmit(e){
+    //     e.preventDefault();
+    //     axios({
+    //         method: "POST",
+    //         url: "http://localhost:3002/send",
+    //         data:  this.state
+    //     }).then((response)=>{
+    //         if (response.data.status === 'success') {
+    //             alert("Message Sent.");
+    //             this.resetForm()
+    //         } else if (response.data.status === 'fail') {
+    //             alert("Message failed to send.")
+    //         }
+    //     })
+    // }
+
+    // resetForm(){
+    //     this.setState({name: '', email: '', message: ''})
+    // }
+
     render() {
         return(
             <div className="contact">

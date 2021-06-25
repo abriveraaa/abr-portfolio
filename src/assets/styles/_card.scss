@@ -1,14 +1,14 @@
 .card {
     border-radius: 5px;
-    background-color: $base-color-light;
+    background-color: $color-yellow;
     width: 25%;
     margin: 1rem;
-    color: $color-white;
+    color: #fff;
     cursor: pointer;
     box-shadow: $box-shadow;
     overflow: hidden;
 
-    &-info {
+    &__details {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -21,6 +21,8 @@
         }
 
         &--title {
+            color: inherit;
+            text-decoration: none;
             width: 60%;
             font-weight: 300;
             text-transform: uppercase;
@@ -28,8 +30,4 @@
             line-height: 1.4;
         }
     }
-}
-
-.active-card {
-    background-color: $color-yellow !important;
 }
